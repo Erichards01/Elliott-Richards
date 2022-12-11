@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+
+import About from "./components/about";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <About
+        headingOne="Hi, I'm Elliott Richards"
+        headingTwo="A passionate coder!"
+        hello=" I've enjoyed every bit of learning frontend development over my
+        journey. I love the challenge and the endless learning."
+        interests="  I have a dog called Stanley that keeps me busy. I love AFL, I'm a big
+        Fremantle Dockers fan. I love catching up with friends and
+        family."
+        contact="Contact details below- "
+        email=" Email: e.richards066@gmail.com "
+        linkedin="https://www.linkedin.com/in/elliott-richards01"
+      />
+    </main>
   );
 }
 
