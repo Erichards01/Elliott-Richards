@@ -89,7 +89,7 @@ nav {
   padding: 20px;
 }
 
-@media only screen and (max-width: 767px) {
+@media (orientation: portrait) and (max-width: 767px) {
   .aboutHeader {
     max-height: 100%;
     max-width: 200px;
@@ -137,33 +137,8 @@ nav {
     scale: 0.8;
   }
 }
-/* 
-@media only screen and (min-width: 350px) {
-  .aboutHeader {
-    min-width: 420px;
-  }
 
-  .container {
-    font-size: 60% !important;
-  }
-  .aboutHeader h1 {
-    font-size: 200%;
-  }
-  .aboutHeader h2 {
-    font-size: 200%;
-  }
-
-  .col1 {
-    width: 50% !important;
-  }
-  .col2 {
-    width: 50% !important;
-  }
-  .aboutHeader img {
-    max-width: 150px !important;
-    max-height: auto !important;
-  }
-} */
+/* @media only screen and (min-width: 350px)  */
 
 @media only screen and (min-width: 767px) {
   /* .container {
@@ -196,3 +171,37 @@ nav {
 
 @media (min-width: 1400px) {
 }  */
+@media (orientation: landscape) {
+  html {
+    zoom: 100%;
+  }
+  .col1 {
+    width: 67% !important;
+  }
+  .col2 {
+    width: 33% !important;
+  }
+
+  .aboutHeader img {
+    max-width: 150px !important;
+  }
+  /* .aboutHeader {
+    max-width: 100%;
+  } */
+  .container {
+    font-size: 65% !important;
+    /* max-width: 100% !important; */
+  }
+  .aboutHeader h1 {
+    font-size: 200%;
+  }
+  .aboutHeader h2 {
+    font-size: 200%;
+  }
+  .row {
+    width: 90%;
+  }
+  main {
+    zoom: 154%;
+  }
+}
