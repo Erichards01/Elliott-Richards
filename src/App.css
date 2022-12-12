@@ -177,6 +177,7 @@ nav {
   }
   .col1 {
     width: 67% !important;
+    zoom: 117%;
   }
   .col2 {
     width: 33% !important;
@@ -185,9 +186,13 @@ nav {
   .aboutHeader img {
     max-width: 150px !important;
   }
-  /* .aboutHeader {
+  .aboutHeader {
+    margin-top: 20px;
+    min-height: 190px;
     max-width: 100%;
-  } */
+    padding: 10px;
+    padding-top: 23px;
+  }
   .container {
     font-size: 65% !important;
     /* max-width: 100% !important; */
@@ -199,9 +204,12 @@ nav {
     font-size: 200%;
   }
   .row {
-    width: 90%;
+    width: 97%;
   }
   main {
     zoom: 154%;
+  }
+  nav {
+    scale: 0.8;
   }
 }
