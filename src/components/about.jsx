@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import photoMe from "../photoMe.jpeg";
 import stanley from "../Stanley.jpeg";
 import fremantleLogo from "../FremantleLogo.png";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 function About(props) {
   const [hello, setHello] = useState(true);
@@ -29,9 +28,6 @@ function About(props) {
 
   return (
     <React.Fragment>
-      <head>
-        meta name="viewport" content="width=device-width, initial-scale=1.0"
-      </head>
       <div className="container">
         {" "}
         <div className="aboutHeader">

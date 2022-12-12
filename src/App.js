@@ -1,11 +1,17 @@
 import "./App.css";
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import About from "./components/about";
 
 function App() {
   return (
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <React.Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Elliott-Richards</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Helmet>
       <main>
         <About
           headingOne="Hi, I'm Elliott Richards"
@@ -19,8 +25,8 @@ function App() {
           email=" Email: e.richards066@gmail.com "
           linkedin="https://www.linkedin.com/in/elliott-richards01"
         />
-      </main>{" "}
-    </meta>
+      </main>
+    </React.Fragment>
   );
 }
 
