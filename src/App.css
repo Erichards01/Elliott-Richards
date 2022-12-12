@@ -1,6 +1,6 @@
 .aboutHeader {
   margin-top: 100px;
-  background-color: rgba(255, 0, 0, 0.603);
+  background-color: rgba(0, 0, 0, 0.603);
   color: rgb(255, 255, 255);
   max-width: 90%;
   max-height: 200px;
@@ -88,7 +88,7 @@ nav {
   padding: 20px;
 }
 
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
   .aboutHeader {
     max-height: 100%;
     max-width: 200px;
@@ -134,7 +134,7 @@ nav {
   }
 }
 
-@media (min-width: 350px) {
+@media only screen and (min-width: 350px) {
   .aboutHeader {
     min-width: 420px;
   }
@@ -164,7 +164,7 @@ nav {
   }
 }
 
-@media (min-width: 767px) {
+@media only screen and (min-width: 767px) {
   /* .container {
     width: 100% !important;
     height: auto !important;
