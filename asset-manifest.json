@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Elliott-Richards/static/css/main.b0f6828d.css",
+    "main.css": "/Elliott-Richards/static/css/main.c11a7ecb.css",
     "main.js": "/Elliott-Richards/static/js/main.2307dcc4.js",
     "static/js/787.128fc6e9.chunk.js": "/Elliott-Richards/static/js/787.128fc6e9.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/Elliott-Richards/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -11,12 +11,12 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/Elliott-Richards/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/Stanley.jpeg": "/Elliott-Richards/static/media/Stanley.d911fc8ad7b4e908d0c6.jpeg",
     "index.html": "/Elliott-Richards/index.html",
-    "main.b0f6828d.css.map": "/Elliott-Richards/static/css/main.b0f6828d.css.map",
+    "main.c11a7ecb.css.map": "/Elliott-Richards/static/css/main.c11a7ecb.css.map",
     "main.2307dcc4.js.map": "/Elliott-Richards/static/js/main.2307dcc4.js.map",
     "787.128fc6e9.chunk.js.map": "/Elliott-Richards/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0f6828d.css",
+    "static/css/main.c11a7ecb.css",
     "static/js/main.2307dcc4.js"
   ]
 }
