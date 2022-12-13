@@ -29,13 +29,12 @@ function About(props) {
   return (
     <React.Fragment>
       <div className="container">
-        {" "}
         <div className="aboutHeader">
           <div className="row">
             <div className="col1">
               <h1>{props.headingOne}</h1>
               <h2>{props.headingTwo}</h2>
-              {/* col-xs-12 */}
+
               {hello && <p>{props.hello}</p>}
               {interests && <p>{props.interests}</p>}
               {contact && (
