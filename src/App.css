@@ -115,8 +115,8 @@ nav {
     flex-direction: column;
     margin-right: auto;
     margin-left: auto;
-    height: 350px;
-    padding: inherit;
+    height: 400px;
+
     margin: auto !important;
   }
   .container {
@@ -124,8 +124,12 @@ nav {
   }
   .aboutHeader img {
     max-height: auto;
-    width: 130px !important;
+    width: 140px !important;
     position: absolute !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 60% !important;
   }
   .col1 {
     min-width: 100%;
