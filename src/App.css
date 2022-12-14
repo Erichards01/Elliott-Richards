@@ -53,7 +53,11 @@ html {
   border: rgba(0, 217, 255, 0.5);
   border-style: solid;
   border-width: 1px;
+
+  /* 
+  transform: translateY(-400px); */
 }
+
 .page-link:focus {
   font-variant: small-caps !important
 
@@ -111,13 +115,17 @@ nav {
     flex-direction: column;
     margin-right: auto;
     margin-left: auto;
+    height: 350px;
+    padding: inherit;
+    margin: auto !important;
   }
   .container {
     font-size: 60% !important;
   }
   .aboutHeader img {
-    max-width: 150px;
     max-height: auto;
+    width: 130px !important;
+    position: absolute !important;
   }
   .col1 {
     min-width: 100%;
@@ -138,6 +146,20 @@ nav {
   nav {
     scale: 0.8;
   }
+  .imgAnimation-enter {
+    transform: translateX(-400px);
+  }
+  .imgAnimation-enter-active {
+    transform: translateX(0);
+    transition: cubic-bezier(0.42, 0, 0.58, 1.49) transform 3s;
+  }
+  .imgAnimation-exit {
+    transform: translateX(0);
+  }
+  .imgAnimation-exit-active {
+    opacity: 0;
+    transition: opacity 3s;
+  }
 }
 
 @media only screen and (min-width: 767px) {
@@ -152,6 +174,7 @@ nav {
     display: flex !important;
     flex-direction: row !important;
     margin-top: 24px !important;
+    position: absolute;
   }
 
   .container {
@@ -182,6 +205,21 @@ nav {
   .aboutHeader h2 {
     font-size: 200%;
   }
+
+  .imgAnimation-enter {
+    transform: translateY(-400px);
+  }
+  .imgAnimation-enter-active {
+    transform: translateY(0);
+    transition: cubic-bezier(0.42, 0, 0.58, 1.49) transform 4s;
+  }
+  .imgAnimation-exit {
+    transform: translateY(0);
+  }
+  .imgAnimation-exit-active {
+    opacity: 0;
+    transition: opacity 3s;
+  }
 }
 @media only screen and (min-width: 990px) {
   .col1 {
@@ -197,7 +235,7 @@ nav {
   max-width: 150px !important;
   display: flex !important;
   flex-direction: row !important;
-
+  position: absolute;
   margin-top: 18px !important;
 }
 
@@ -215,6 +253,7 @@ nav {
 
   .aboutHeader img {
     max-width: 150px !important;
+    position: absolute;
   }
   .aboutHeader {
     margin-top: 20px;
@@ -242,7 +281,22 @@ nav {
   nav {
     scale: 0.8;
   }
+  .imgAnimation-enter {
+    transform: translateY(-400px);
+  }
+  .imgAnimation-enter-active {
+    transform: translateY(0);
+    transition: cubic-bezier(0.42, 0, 0.58, 1.49) transform 4s;
+  }
+  .imgAnimation-exit {
+    transform: translateY(0);
+  }
+  .imgAnimation-exit-active {
+    opacity: 0;
+    transition: opacity 3s;
+  }
 }
+
 @media only screen and (min-width: 1285px) {
   .col1 {
     width: 67% !important;
@@ -264,5 +318,19 @@ nav {
   }
   .aboutHeader h2 {
     font-size: 200%;
+  }
+  .imgAnimation-enter {
+    transform: translateY(-400px);
+  }
+  .imgAnimation-enter-active {
+    transform: translateY(0);
+    transition: cubic-bezier(0.42, 0, 0.58, 1.49) transform 4s;
+  }
+  .imgAnimation-exit {
+    transform: translateY(0);
+  }
+  .imgAnimation-exit-active {
+    opacity: 0;
+    transition: opacity 3s;
   }
 }

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, ues } from "react";
 import photoMe from "../photoMe.jpeg";
 import stanley from "../Stanley.jpeg";
 import fremantleLogo from "../FremantleLogo.png";
+import { CSSTransition } from "react-transition-group";
 
 function About(props) {
   const [hello, setHello] = useState(true);
@@ -47,9 +48,13 @@ function About(props) {
                 </p>
               )}
             </div>
-
             <div className="col2">
-              {hello && (
+              <CSSTransition
+                in={hello}
+                timeout={100000}
+                classNames="imgAnimation"
+                unmountOnExit
+              >
                 <img
                   src={photoMe}
                   alt="myself"
@@ -60,8 +65,13 @@ function About(props) {
                     margin: "auto",
                   }}
                 />
-              )}
-              {interests && (
+              </CSSTransition>
+              <CSSTransition
+                in={interests}
+                timeout={100000}
+                classNames="imgAnimation"
+                unmountOnExit
+              >
                 <img
                   src={fremantleLogo}
                   alt="sportTeam"
@@ -72,8 +82,13 @@ function About(props) {
                     margin: "auto",
                   }}
                 />
-              )}
-              {contact && (
+              </CSSTransition>
+              <CSSTransition
+                in={contact}
+                timeout={100000}
+                classNames="imgAnimation"
+                unmountOnExit
+              >
                 <img
                   src={stanley}
                   alt="pet"
@@ -84,7 +99,7 @@ function About(props) {
                     margin: "auto",
                   }}
                 />
-              )}
+              </CSSTransition>
             </div>
           </div>
         </div>
