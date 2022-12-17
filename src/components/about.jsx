@@ -36,17 +36,36 @@ function About(props) {
               <h1>{props.headingOne}</h1>
               <h2>{props.headingTwo}</h2>
 
-              {hello && <p>{props.hello}</p>}
-              {interests && <p>{props.interests}</p>}
-              {contact && (
+              <CSSTransition
+                in={hello}
+                timeout={100000}
+                classNames="pAnimation"
+                unmountOnExit
+              >
+                <p>{props.hello}</p>
+              </CSSTransition>
+              <CSSTransition
+                in={interests}
+                timeout={100000}
+                classNames="pAnimation"
+                unmountOnExit
+              >
+                <p>{props.interests}</p>
+              </CSSTransition>
+              <CSSTransition
+                in={contact}
+                timeout={100000}
+                classNames="pAnimation"
+                unmountOnExit
+              >
                 <p>
                   {props.contact} <br />
                   {props.email} <br />
                   <a href={props.linkedin} className="linkedin">
-                    Linkedin: Elliott-Richards{" "}
+                    Linkedin: Elliott-Richards
                   </a>
                 </p>
-              )}
+              </CSSTransition>
             </div>
             <div className="col2">
               <CSSTransition
