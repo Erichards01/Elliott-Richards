@@ -164,7 +164,7 @@ nav {
 
     margin-right: auto;
     margin-left: auto;
-    height: 400px !important;
+    height: 340px !important;
 
     margin: auto !important;
   }
@@ -228,7 +228,7 @@ nav {
     max-width: 150px !important;
     display: flex !important;
     flex-direction: row !important;
-    margin-top: 24px !important;
+    margin-top: 24px;
     position: absolute;
   }
 
@@ -252,7 +252,6 @@ nav {
   }
   .container {
     font-size: 65% !important;
-    /* max-width: 100% !important; */
   }
   .aboutHeader h1 {
     font-size: 200%;
@@ -260,21 +259,6 @@ nav {
   .aboutHeader h2 {
     font-size: 200%;
   }
-
-  /* .imgAnimation-enter {
-    transform: translateY(-400px);
-  }
-  .imgAnimation-enter-active {
-    transform: translateY(0);
-    transition: cubic-bezier(0.42, 0, 0.58, 1.49) transform 4s;
-  }
-  .imgAnimation-exit {
-    transform: translateY(0);
-  }
-  .imgAnimation-exit-active {
-    opacity: 0;
-    transition: opacity 3s;
-  } */
 }
 @media only screen and (min-width: 990px) {
   .col1 {
@@ -291,7 +275,7 @@ nav {
   display: flex !important;
   flex-direction: row !important;
   position: absolute;
-  margin-top: 18px !important;
+  margin-top: 18px;
 }
 
 @media (orientation: landscape) and (max-width: 767px) {
@@ -319,7 +303,6 @@ nav {
   }
   .container {
     font-size: 65% !important;
-    /* max-width: 100% !important; */
   }
   .aboutHeader h1 {
     font-size: 200%;
@@ -336,20 +319,6 @@ nav {
   nav {
     scale: 0.8;
   }
-  /* .imgAnimation-enter {
-    transform: translateY(-400px);
-  }
-  .imgAnimation-enter-active {
-    transform: translateY(0);
-    transition: cubic-bezier(0.42, 0, 0.58, 1.49) transform 4s;
-  }
-  .imgAnimation-exit {
-    transform: translateY(0);
-  }
-  .imgAnimation-exit-active {
-    opacity: 0;
-    transition: opacity 3s;
-  } */
 }
 
 @media only screen and (min-width: 1285px) {
@@ -362,7 +331,7 @@ nav {
   }
   .aboutHeader img {
     max-width: 180px !important;
-    margin-top: 5px !important;
+    margin-top: 5px;
   }
 
   .container {
@@ -374,18 +343,4 @@ nav {
   .aboutHeader h2 {
     font-size: 200%;
   }
-  /* .imgAnimation-enter {
-    transform: translateY(-400px);
-  }
-  .imgAnimation-enter-active {
-    transform: translateY(0);
-    transition: cubic-bezier(0.42, 0, 0.58, 1.49) transform 4s;
-  }
-  .imgAnimation-exit {
-    transform: translateY(0);
-  }
-  .imgAnimation-exit-active {
-    opacity: 0;
-    transition: opacity 3s;
-  } */
 }
