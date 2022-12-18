@@ -17,6 +17,19 @@ function App() {
         contact="Contact details below- "
         email=" Email: e.richards066@gmail.com "
         linkedin="https://www.linkedin.com/in/elliott-richards01"
+        helloP2={
+          <>
+            <h2>Core Values</h2>
+            <p>
+              Honesty <br />
+              Integrity <br />
+              Respect <br />
+              Reliability <br />
+              Kindness
+              <br />
+            </p>
+          </>
+        }
       />
     </main>
   );
