@@ -63,6 +63,12 @@ html {
   border: rgba(0, 217, 255, 0.5);
   border-style: solid;
   border-width: 1px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 83%;
+  height: auto;
 
   /* 
   transform: translateY(-400px); */
@@ -112,7 +118,7 @@ nav {
   transform: translateY(0);
   opacity: 1;
 
-  transition: cubic-bezier(0.42, 0, 0.58, 1.49), transform 2s, opacity 3s;
+  transition: cubic-bezier(0.42, 0, 0.58, 1.49) transform 2s, opacity 3s;
 }
 .imgAnimation-exit {
   transform: translateY(0);
@@ -178,7 +184,7 @@ nav {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    width: 80% !important;
+    width: 83% !important;
   }
   .col1 {
     min-width: 100%;
