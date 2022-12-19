@@ -21,11 +21,17 @@ function App() {
           <>
             <h2>Core Values</h2>
             <p>
-              Honesty <br />
-              Integrity <br />
-              Respect <br />
-              Reliability <br />
-              Kindness
+              <strong>Honesty</strong> - Strive to be truthful and transparent
+              in all interactions. <br />
+              <strong> Integrity</strong> - Honest, moral principles and do the
+              right thing.
+              <br />
+              <strong>Respect</strong> - Value someone's feelings and their
+              views, even if you don't agree with them.
+              <br />
+              <strong>Reliability</strong> - Trustworthy and consistent. <br />
+              <strong>Kindness</strong> - Friendly, generous, and considerate to
+              others and yourself.
               <br />
             </p>
           </>

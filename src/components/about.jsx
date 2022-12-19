@@ -9,22 +9,31 @@ function About(props) {
   const [interests, setInterests] = useState(false);
   const [contact, setContact] = useState(false);
 
+  // const [headingP2, setheadingP2] = useState(true);
+  const [helloP2, setHelloP2] = useState(true);
+
   const helloHandler = () => {
     setHello(true);
     setInterests(false);
     setContact(false);
+    // setheadingP2(true);
+    setHelloP2(true);
   };
 
   const interestsHandler = () => {
     setHello(false);
     setInterests(true);
     setContact(false);
+    // setheadingP2(false);
+    setHelloP2(false);
   };
 
   const contactHandler = () => {
     setHello(false);
     setInterests(false);
+    // setheadingP2(false);
     setContact(true);
+    setHelloP2(false);
   };
 
   return (
@@ -122,18 +131,32 @@ function About(props) {
             </div>
           </div>
         </div>
-        <nav>
+        <div className="aboutHeader">
+          <div className="row">
+            <div className="col3">
+              <CSSTransition
+                in={helloP2}
+                timeout={3000}
+                classNames="p2Animation"
+                unmountOnExit
+              >
+                <p>{props.helloP2}</p>
+              </CSSTransition>
+            </div>{" "}
+          </div>
+        </div>
+        <nav className="navbar sticky-bottom bg-light" id="navBottom">
           <ul className="pagination">
             <li className="page-item">
               <button onClick={helloHandler} className="page-link">
                 Hello
               </button>
-            </li>{" "}
+            </li>
             <li className="page-item">
               <button onClick={interestsHandler} className="page-link">
                 Interests
               </button>
-            </li>{" "}
+            </li>
             <li className="page-item">
               <button onClick={contactHandler} className="page-link">
                 Contact
