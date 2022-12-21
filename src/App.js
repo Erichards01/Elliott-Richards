@@ -36,6 +36,7 @@ function App() {
             </p>
           </>
         }
+        contactP2="thanks for vieweing the website CHUMMMMMMMMMMMMMM"
       />
     </main>
   );
