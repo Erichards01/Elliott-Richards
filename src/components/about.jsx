@@ -2,39 +2,73 @@ import React, { useState, ues } from "react";
 import photoMe from "../photoMe.jpeg";
 import stanley from "../Stanley.jpeg";
 import fremantleLogo from "../FremantleLogo.png";
-import { CSSTransition } from "react-transition-group";
+import { CSSTransition, Transition } from "react-transition-group";
+import footy from "../footy.jpeg";
+import hike from "../hike.jpeg";
+import jurienBay from "../jurienBay.jpeg";
+import puppySchool from "../puppySchool.jpg";
+import zurich from "../Zurich.jpg";
 
 function About(props) {
   const [hello, setHello] = useState(true);
   const [interests, setInterests] = useState(false);
   const [contact, setContact] = useState(false);
-
-  // const [headingP2, setheadingP2] = useState(true);
   const [helloP2, setHelloP2] = useState(true);
+  const [interestsP2, setInterestsP2] = useState(false);
+  const [contactP2, setContactP2] = useState(false);
 
   const helloHandler = () => {
     setHello(true);
     setInterests(false);
     setContact(false);
-    // setheadingP2(true);
+
     setHelloP2(true);
+    setInterestsP2(false);
+    setContactP2(false);
   };
 
   const interestsHandler = () => {
     setHello(false);
     setInterests(true);
     setContact(false);
-    // setheadingP2(false);
+
     setHelloP2(false);
+    setInterestsP2(true);
+    setContactP2(false);
   };
 
   const contactHandler = () => {
     setHello(false);
     setInterests(false);
-    // setheadingP2(false);
+
     setContact(true);
     setHelloP2(false);
+    setInterestsP2(false);
+    setContactP2(true);
   };
+
+  const photos = [
+    {
+      src: footy,
+      alt: "Man and woman at football game",
+    },
+    {
+      src: hike,
+      alt: "Man hiking bush trail with pet dog",
+    },
+    {
+      src: jurienBay,
+      alt: "Man walking dog on beach",
+    },
+    {
+      src: puppySchool,
+      alt: "Man holding puppy dog at dog training class",
+    },
+    {
+      src: zurich,
+      alt: "Man standing in snowd",
+    },
+  ];
 
   return (
     <React.Fragment>
@@ -85,6 +119,7 @@ function About(props) {
               >
                 <img
                   src={photoMe}
+                  id="topBox"
                   alt="myself"
                   style={{
                     maxWidth: "100%",
@@ -101,6 +136,7 @@ function About(props) {
                 unmountOnExit
               >
                 <img
+                  id="topBox"
                   src={fremantleLogo}
                   alt="sportTeam"
                   style={{
@@ -118,6 +154,7 @@ function About(props) {
                 unmountOnExit
               >
                 <img
+                  id="topBox"
                   src={stanley}
                   alt="pet"
                   style={{
@@ -142,7 +179,36 @@ function About(props) {
               >
                 <p>{props.helloP2}</p>
               </CSSTransition>
-            </div>{" "}
+
+              <CSSTransition
+                in={interestsP2}
+                timeout={3000}
+                classNames="imgBox2Animation"
+                unmountOnExit
+              >
+                <div
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "space-evenly",
+                    alignItems: "center",
+                  }}
+                >
+                  {photos.map((pic) => (
+                    <img src={pic.src} alt={pic.alt} />
+                  ))}
+                </div>
+              </CSSTransition>
+
+              <CSSTransition
+                in={contactP2}
+                timeout={3000}
+                classNames="p2Animation"
+                unmountOnExit
+              >
+                <p>{props.contactP2}</p>
+              </CSSTransition>
+            </div>
           </div>
         </div>
         <nav className="navbar sticky-bottom bg-light" id="navBottom">
