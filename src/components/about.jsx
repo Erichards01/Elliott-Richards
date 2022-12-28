@@ -2,7 +2,7 @@ import React, { useState, ues } from "react";
 import photoMe from "../photoMe.jpeg";
 import stanley from "../Stanley.jpeg";
 import fremantleLogo from "../FremantleLogo.png";
-import { CSSTransition, Transition } from "react-transition-group";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import footy from "../footy.jpeg";
 import hike from "../hike.jpeg";
 import jurienBay from "../jurienBay.jpeg";
@@ -70,6 +70,8 @@ function About(props) {
     },
   ];
 
+  // const slow = photos.map((photo) => (photo(0).style.transitonDelay = "1.2s"));
+
   return (
     <React.Fragment>
       <div className="container">
@@ -129,9 +131,10 @@ function About(props) {
                   }}
                 />
               </CSSTransition>
+
               <CSSTransition
                 in={interests}
-                timeout={100000}
+                timeout={10000}
                 classNames="imgAnimation"
                 unmountOnExit
               >
@@ -147,6 +150,7 @@ function About(props) {
                   }}
                 />
               </CSSTransition>
+
               <CSSTransition
                 in={contact}
                 timeout={100000}
@@ -182,11 +186,12 @@ function About(props) {
 
               <CSSTransition
                 in={interestsP2}
-                timeout={3000}
+                timeout={2500}
                 classNames="imgBox2Animation"
                 unmountOnExit
               >
                 <div
+                  className="pictures"
                   style={{
                     width: "100%",
                     display: "flex",
@@ -199,7 +204,6 @@ function About(props) {
                   ))}
                 </div>
               </CSSTransition>
-
               <CSSTransition
                 in={contactP2}
                 timeout={3000}
