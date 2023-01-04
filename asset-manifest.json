@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Elliott-Richards/static/css/main.46278281.css",
+    "main.css": "/Elliott-Richards/static/css/main.ee622e5c.css",
     "main.js": "/Elliott-Richards/static/js/main.e0e40b7f.js",
     "static/js/787.128fc6e9.chunk.js": "/Elliott-Richards/static/js/787.128fc6e9.chunk.js",
     "static/media/jurienBay.jpeg": "/Elliott-Richards/static/media/jurienBay.972a958e36e62b4546df.jpeg",
@@ -16,12 +16,12 @@
     "static/media/Stanley.jpeg": "/Elliott-Richards/static/media/Stanley.d911fc8ad7b4e908d0c6.jpeg",
     "static/media/footy.jpeg": "/Elliott-Richards/static/media/footy.6949409660877d8cf37d.jpeg",
     "index.html": "/Elliott-Richards/index.html",
-    "main.46278281.css.map": "/Elliott-Richards/static/css/main.46278281.css.map",
+    "main.ee622e5c.css.map": "/Elliott-Richards/static/css/main.ee622e5c.css.map",
     "main.e0e40b7f.js.map": "/Elliott-Richards/static/js/main.e0e40b7f.js.map",
     "787.128fc6e9.chunk.js.map": "/Elliott-Richards/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46278281.css",
+    "static/css/main.ee622e5c.css",
     "static/js/main.e0e40b7f.js"
   ]
 }
