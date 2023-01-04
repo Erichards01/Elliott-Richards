@@ -1,4 +1,4 @@
-import React, { useState, ues } from "react";
+import React, { useState } from "react";
 import photoMe from "../photoMe.jpeg";
 import stanley from "../Stanley.jpeg";
 import fremantleLogo from "../FremantleLogo.png";
