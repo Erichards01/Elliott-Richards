@@ -19,7 +19,7 @@ function App() {
         linkedin="https://www.linkedin.com/in/elliott-richards01"
         helloP2={
           <>
-            <h2>Core Values</h2>
+            <h2 className="coreValues">Core Values</h2>
             <p>
               <strong>Honesty</strong> - Strive to be truthful and transparent
               in all interactions. <br />
@@ -36,7 +36,53 @@ function App() {
             </p>
           </>
         }
-        contactP2="thanks for viewing the website"
+        contactP2={
+          <>
+            <h2 className="getInTouch">Get in touch</h2>
+            <div className="contactForm">
+              <form
+                target="_blank"
+                action="https://formsubmit.co/e.richards066@gmail.com"
+                method="POST"
+              >
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Full Name"
+                        required
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="Email Address"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group" id="yourMessage">
+                  <textarea
+                    placeholder="Your Message"
+                    class="form-control"
+                    name="message"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" className="formBtn">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </>
+        }
       />
     </main>
   );

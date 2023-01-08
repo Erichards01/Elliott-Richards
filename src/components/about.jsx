@@ -74,7 +74,6 @@ function About(props) {
 
   const styles = {
     backgroundColor: dark ? "#222222" : "transparent",
-    border: dark ? "#222222" : "transparent",
   };
 
   function darkMode() {
@@ -221,11 +220,12 @@ function About(props) {
                 classNames="p2Animation"
                 unmountOnExit
               >
-                <p>{props.contactP2}</p>
+                <div>{props.contactP2}</div>
               </CSSTransition>
             </div>
           </div>
         </div>
+
         <nav className="navbar sticky-bottom bg-light" id="navBottom">
           <ul className="pagination">
             <li className="page-item">
