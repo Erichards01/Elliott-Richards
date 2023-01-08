@@ -70,11 +70,22 @@ function About(props) {
     },
   ];
 
-  // const slow = photos.map((photo) => (photo(0).style.transitonDelay = "1.2s"));
+  const [dark, setDark] = useState(false);
 
+  const styles = {
+    backgroundColor: dark ? "#222222" : "transparent",
+    border: dark ? "#222222" : "transparent",
+  };
+
+  function darkMode() {
+    setDark((prevDark) => !prevDark);
+  }
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="container" style={styles}>
+        <button onClick={darkMode} className="darkMode">
+          DARK MODE
+        </button>
         <div className="aboutHeader">
           <div className="row">
             <div className="col1">

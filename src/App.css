@@ -1,17 +1,17 @@
 .aboutHeader {
-  margin-top: 100px;
+  margin-top: 200px;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  max-width: 90%;
-  max-height: 200px;
+  max-width: 95%;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   border: rgba(0, 217, 255, 0.5);
   border-style: solid;
-  border-width: 1px;
-  padding: 10px;
+  border-width: 2px;
+  padding: 20px;
 
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 strong {
   text-shadow: 1px 1px rgba(0, 217, 255, 0.5);
@@ -23,17 +23,22 @@ main {
   border-width: 0% 2% 0% 2%;
 }
 
+.container {
+  max-width: 100% !important;
+}
+
 html {
-  /* background-color: rgba(0, 0, 0, 0.253); */
   border: rgb(0 109 128);
   border-style: solid;
-  border-top-width: 45px;
-  border-bottom-width: 45px;
-  zoom: 200%;
+  border-top-width: 90px;
+  border-bottom-width: 90px;
+
+  /*remove*/
+  /* zoom: 200%; */
 }
 
 .row {
-  height: 190px !important;
+  height: 380px !important;
 }
 .col1 {
   position: relative;
@@ -64,15 +69,20 @@ html {
   -moz-box-align: center;
   box-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .col3 img {
   width: 19%;
-  max-width: 116px !important;
-  max-height: 155px;
+  max-width: 232px !important;
+  max-height: 310px;
 }
 .row {
-  height: 190px !important;
+  height: 380px !important;
+}
+
+.row > * {
+  font-size: 200%;
 }
 
 .linkedin {
@@ -106,9 +116,6 @@ img {
   right: 0;
   width: 83%;
   height: auto;
-
-  /* 
-  transform: translateY(-400px); */
 }
 
 .page-link:focus {
@@ -130,7 +137,7 @@ img {
   background-color: rgb(0 109 128) !important
   ;
   color: rgb(255, 255, 255) !important;
-  /* font-variant: small-caps; */
+
   font-weight: 900;
 }
 
@@ -145,10 +152,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  bottom: 30px;
+  padding: 40px;
+  bottom: 60px;
   height: 0px;
   --bs-bg-opacity: 0;
+  scale: 1.5 !important;
 }
 .imgAnimation-enter {
   opacity: 0;
@@ -228,13 +236,18 @@ ul {
   position: absolute;
 }
 
+.darkMode {
+  scale: 1.2;
+  font-weight: 900;
+  margin-top: 6px;
+}
 @media (orientation: portrait) and (max-width: 767px) {
   .aboutHeader {
     max-height: 100%;
-    max-width: 200px;
-    margin-top: 20px;
+    max-width: 400px;
+    margin-top: 40px;
 
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .aboutHeader h1 {
     font-size: 200%;
@@ -248,7 +261,7 @@ ul {
 
     margin-right: auto;
     margin-left: auto;
-    height: 340px !important;
+    height: 680px !important;
 
     margin: auto !important;
   }
@@ -257,7 +270,7 @@ ul {
   }
   #topBox {
     max-height: auto;
-    width: 140px !important;
+    width: 280px !important;
     position: absolute !important;
     display: block !important;
     margin-left: auto !important;
@@ -314,8 +327,8 @@ ul {
   html {
     border: rgb(0 109 128);
     border-style: solid;
-    border-top-width: 15px;
-    border-bottom-width: 15px;
+    border-top-width: 30px;
+    border-bottom-width: 30px;
   }
   #navBottom {
     scale: 0.8;
@@ -392,7 +405,7 @@ ul {
   }
   .aboutHeader {
     min-height: 190px;
-    max-width: 100%;
+    max-width: 95%;
     margin-top: 100px;
     padding-top: 5px;
   }
@@ -410,42 +423,41 @@ ul {
   .col1 {
     width: 60% !important;
     margin-top: 10px !important;
-    zoom: 1.2;
   }
+}
+
+.row > * {
+  font-size: 230%;
 }
 .col2 {
   width: 40% !important;
 }
 #topBox {
-  max-width: 150px !important;
+  max-width: 300px !important;
   display: flex !important;
   flex-direction: row !important;
   position: absolute;
-  margin-top: 18px;
+  margin-top: 36px;
 }
 
 @media (orientation: landscape) and (max-width: 767px) {
-  html {
-    zoom: 100%;
-  }
   .col1 {
     width: 67% !important;
-    zoom: 117%;
   }
   .col2 {
     width: 33% !important;
   }
 
   #topBox {
-    max-width: 150px !important;
+    max-width: 300px !important;
     position: absolute;
   }
   .aboutHeader {
-    margin-top: 20px;
-    min-height: 190px;
-    max-width: 100%;
-    padding: 10px;
-    padding-top: 23px;
+    margin-top: 40px;
+    min-height: 380px;
+    max-width: 95%;
+    padding: 20px;
+    padding-top: 46px;
   }
   .container {
     font-size: 65% !important;
@@ -459,15 +471,13 @@ ul {
   .row {
     width: 97%;
   }
-  main {
-    zoom: 154%;
-  }
+
   #navBottom {
     scale: 0.8;
   }
 }
 
-@media only screen and (min-width: 1285px) {
+/* @media only screen and (min-width: 1285px) {
   .col1 {
     width: 67% !important;
     zoom: 1;
@@ -489,4 +499,4 @@ ul {
   .aboutHeader h2 {
     font-size: 200%;
   }
-}
+} */
